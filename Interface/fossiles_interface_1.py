@@ -1,6 +1,6 @@
 import maya.cmds as cmds
 
-window = cmds.window(title="Générateur de fossiles", backgroundColor=(1.0, 0.956, 0.901), widthHeight=(200, 140))
+window = cmds.window(title="Générateur de fossiles", backgroundColor=(0.898, 0.756, 0.601), widthHeight=(200, 140))
 cmds.rowColumnLayout(width=470, nc=4, cal=[(1,"center"), (2,"center"), (3,"center"), (4,"center")], cw=[(1,150), (2,100), (3,100), (4,100)])
 cmds.text(label='Environnement')
 cmds.iconTextRadioCollection()
