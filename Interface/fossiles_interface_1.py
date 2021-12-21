@@ -1,6 +1,6 @@
 import maya.cmds as cmds
 
-window = cmds.window(title="Générateur de fossiles", backgroundColor=(0.898, 0.756, 0.601), widthHeight=(200, 140))
+window = cmds.window(title="Générateur de fossiles", backgroundColor=(0.898, 0.756, 0.601), widthHeight=(200, 140), resizeToFitChildren=True)
 cmds.rowColumnLayout(width=470, nc=4, cal=[(1,"center"), (2,"center"), (3,"center"), (4,"center")], cw=[(1,150), (2,100), (3,100), (4,100)])
 cmds.text(label='Environnement')
 cmds.iconTextRadioCollection()
@@ -25,7 +25,10 @@ cmds.iconTextRadioButton( st='iconAndTextVertical', i1='D:\Python\Projet_final\p
 cmds.iconTextRadioButton( st='iconAndTextVertical', i1='D:\Python\Projet_final\moyen.png', l='moyen', highlightColor=(0.235, 0.184, 0.184), h=100,w=50, onCommand=('cmds.deleteUI(\"'+window+'\", window=True)'))
 cmds.iconTextRadioButton( st='iconAndTextVertical', i1='D:\Python\Projet_final\grand.png', l='grand', highlightColor=(0.925, 0.467, 0.047),h=100,w=50, onCommand=('cmds.deleteUI(\"'+window+'\", window=True)'))
 
+cmds.separator(h=20, style='none') 
 
+cmds.separator(h=10, style='none') 
+cmds.button(label='Generate') 
 
 
 
